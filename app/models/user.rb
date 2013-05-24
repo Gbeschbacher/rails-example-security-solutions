@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_secure_password
   has_many :articles
 
   attr_accessible :name, :email, :password, :homepage, :is_admin
